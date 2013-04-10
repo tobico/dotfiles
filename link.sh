@@ -1,2 +1,5 @@
-rm -f $HOME/.zshrc
-ln -s $HOME/.dotfiles/zshrc $HOME/.zshrc
+for file in zshrc gitconfig
+do
+  rm -f $HOME/.$file
+  ln -s $HOME/.dotfiles/$file $HOME/.$file
+done
