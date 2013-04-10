@@ -11,6 +11,7 @@ alias superpush="git fetch && git rebase origin/master && git push"
 export EDITOR="subl -w"
 
 source "$HOME/.dotfiles/scm_breeze/scm_breeze.sh"
+source "$HOME/.dotfiles/pure.zsh"
 
 # RBENV
 export RBENV_ROOT=/usr/local/var/rbenv
