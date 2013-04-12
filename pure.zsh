@@ -24,6 +24,8 @@ CMD_MAX_EXEC_TIME=5
 # %m => shortname host
 # %(?..) => prompt conditional - %(condition.true.false)
 
+autoload -U colors && colors
+
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git # You can add hg too if needed: `git hg`
 zstyle ':vcs_info:git*' formats ' %b'
@@ -51,13 +53,19 @@ preexec() {
 
 precmd() {
 	vcs_info
-	# Add `%*` to display the time
-	print -P "\n%F{blue}%~%F{236}$vcs_info_msg_0_`git_dirty` $username%f %F{yellow}`cmd_exec_time`%f"
+
+	[[ -n "$username" ]] && display_username="%{$bg[red]%} $username"
+	[[ -n "$vcs_info_msg_0_" ]] && vcs="%{$bg[blue]%}$vcs_info_msg_0_`git_dirty` "
+	exec_time=`cmd_exec_time`
+	[[ -n "$exec_time" ]] && exec_time="%{$bg[yellow]%} $exec_time "
+
+	print -P "\n%{$fg[black]%}%{$bg[green]%} %~ $vcs$display_username$exec_time%{$reset_color%}"
+
 	# Reset value since `preexec` isn't always triggered
 	unset cmd_timestamp
 }
 
 # Prompt turns red if the previous command didn't exit with 0
-PROMPT='%(?.🔵.🔴) '
+PROMPT='%(?.🔵.🔴)  '
 # Can be disabled:
 # PROMPT='%F{magenta}❯%f '
