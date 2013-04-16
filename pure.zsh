@@ -55,6 +55,7 @@ precmd() {
 	vcs_info
 
 	[[ -n "$username" ]] && display_username="%{$bg[red]%} $username"
+	vcs=""
 	[[ -n "$vcs_info_msg_0_" ]] && vcs="%{$bg[blue]%}$vcs_info_msg_0_`git_dirty` "
 	exec_time=`cmd_exec_time`
 	[[ -n "$exec_time" ]] && exec_time="%{$bg[yellow]%} $exec_time "
