@@ -11,6 +11,10 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/loca
 export NODE_PATH="/usr/local/lib/node"
 export CDPATH="$HOME/src:$CDPATH"
 
+fpath=($HOME/.dotfiles/zsh-completions/src $fpath)
+
+source $HOME/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # RBENV
 export RBENV_ROOT=/usr/local/var/rbenv
 eval "$(rbenv init -)"
