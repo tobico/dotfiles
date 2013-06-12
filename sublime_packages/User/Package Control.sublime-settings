@@ -1,0 +1,27 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"Abacus",
+		"ApacheConf.tmLanguage",
+		"CoffeeScript",
+		"ColorPick",
+		"Cucumber",
+		"Git",
+		"GitGutter",
+		"Handlebars",
+		"Jasmine",
+		"Markdown Preview",
+		"Package Control",
+		"RSpec (snippets and syntax)",
+		"Ruby 1.9 Hash Converter",
+		"Ruby Slim",
+		"RubyTest",
+		"Rust",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeREPL",
+		"Theme - Nexus",
+		"Theme - Soda"
+	]
+}

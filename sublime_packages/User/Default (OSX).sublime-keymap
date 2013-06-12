@@ -1,0 +1,3 @@
+[
+  {"keys": ["ctrl+w"], "command": "delete_word", "args": {"forward": false, "sub_words": true}}
+]

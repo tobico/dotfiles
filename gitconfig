@@ -11,3 +11,5 @@
 [mergetool "sourcetree"]
 	cmd = $HOME/Library/Application Support/SourceTree/SourceTree 1.5.8/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[diff]
+	algorithm = patience
