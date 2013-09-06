@@ -2,7 +2,7 @@ source "$HOME/.dotfiles/aliases.zsh"
 
 [ -s "$HOME/local.zsh" ] && source "$HOME/local.zsh"
 
-export EDITOR="subl -w"
+export EDITOR=vim
 
 source "$HOME/.dotfiles/scm_breeze/scm_breeze.sh"
 source "$HOME/.dotfiles/pure.zsh"
