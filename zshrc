@@ -11,6 +11,8 @@ path=(/usr/local/bin /usr/bin /bin /usr/sbin /sbin /opt/X11/bin /usr/local/share
 export NODE_PATH="/usr/local/lib/node"
 export CDPATH="$HOME/src:$CDPATH"
 
+set -o emacs
+
 fpath=($HOME/.dotfiles/zsh-completions/src $fpath)
 
 source $HOME/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
