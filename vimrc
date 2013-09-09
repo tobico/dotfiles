@@ -8,7 +8,8 @@ highlight LineNr ctermfg=Black ctermbg=Magenta
 
 " Soft tabs
 set expandtab
-set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 
 " Auto remove trailing spaces
 augroup BWCCreateDir
