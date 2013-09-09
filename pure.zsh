@@ -66,7 +66,4 @@ precmd() {
 	unset cmd_timestamp
 }
 
-# Prompt turns red if the previous command didn't exit with 0
-PROMPT='%(?.🔵.🔴)  '
-# Can be disabled:
-# PROMPT='%F{magenta}❯%f '
+PROMPT='%F{magenta}>%f '
