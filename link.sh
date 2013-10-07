@@ -1,4 +1,4 @@
-for file in zshrc gitconfig tmux.conf vimrc vim
+for file in zshrc gitconfig tmux.conf vimrc vim git.scmbrc
 do
   rm -fv $HOME/.$file
   ln -sv $HOME/.dotfiles/$file $HOME/.$file
