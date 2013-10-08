@@ -22,10 +22,26 @@ augroup BWCCreateDir
 augroup END
 
 " Disable "Ex-mode"
-:nnoremap Q <Nop>
+nnoremap Q <Nop>
 
 " Restyle vertical split window
-:set fillchars+=vert:\ 
+set fillchars+=vert:\ 
 
 " Use a more convenient leader
-:let mapleader = ","
+let mapleader = ","
+
+" Remappings for colemak
+noremap h n
+noremap n h
+noremap H N
+noremap N H
+noremap e j
+noremap j e
+noremap I K
+noremap K I
+noremap i k
+noremap k i
+noremap O L
+noremap L O
+noremap o l
+noremap l o
