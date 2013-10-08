@@ -6,6 +6,10 @@ filetype plugin indent on
 set number
 highlight LineNr ctermfg=Black ctermbg=Magenta
 
+" Right margins
+set cc=78,80,100,120
+hi ColorColumn ctermbg=lightgrey guibg=lightgrey
+
 " Soft tabs
 set expandtab
 set shiftwidth=2
@@ -22,3 +26,6 @@ augroup END
 
 " Restyle vertical split window
 :set fillchars+=vert:\ 
+
+" Use a more convenient leader
+:let mapleader = ","
