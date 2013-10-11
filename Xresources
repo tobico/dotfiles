@@ -1,0 +1,21 @@
+xterm*faceName: Source Code Pro:size=11
+
+xterm*foreground: #F1F1F1
+xterm*background: #000000
+
+xterm*color0: #000000
+xterm*color1: #94579D
+xterm*color2: #5BF385
+xterm*color3: #FFF39D
+xterm*color4: #4B7FD3
+xterm*color5: #D99DD0
+xterm*color6: #61C8C3
+xterm*color7: #191919
+xterm*color8: #333333
+xterm*color9: #873996
+xterm*color10: #33FF57
+xterm*color11: #FFEC2F
+xterm*color12: #1146ED
+xterm*color13: #F042A7
+xterm*color14: #0DC3A7
+xterm*color15: #FFFFFF
