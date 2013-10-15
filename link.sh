@@ -1,4 +1,4 @@
-for file in zshrc gitconfig tmux.conf vimrc vim git.scmbrc fonts Xresources
+for file in zshrc gitconfig tmux.conf vimrc vim git.scmbrc fonts Xresources gtkrc-2.0
 do
   rm -fv $HOME/.$file
   ln -sv $HOME/.dotfiles/$file $HOME/.$file
