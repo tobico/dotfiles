@@ -19,3 +19,6 @@ xterm*color12: #1146ED
 xterm*color13: #F042A7
 xterm*color14: #0DC3A7
 xterm*color15: #FFFFFF
+
+xterm*borderWidth: 0
+xterm*internalBorder: 0
