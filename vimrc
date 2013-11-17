@@ -45,3 +45,9 @@ noremap O L
 noremap L O
 noremap o l
 noremap l o
+
+" Pane switching remaps
+:nmap <C-w>n :wincmd h<CR>
+:nmap <C-w>e :wincmd j<CR>
+:nmap <C-w>i :wincmd k<CR>
+:nmap <C-w>o :wincmd l<CR>
