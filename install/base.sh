@@ -3,8 +3,14 @@ if [ "$(id -u)" != "0" ]; then
   exit 1
 fi
 
-# command line stuff
-apt-get -y install zsh vim tmux wget tig ncdu curl
+# essential tools
+apt-get -y install zsh vim tmux ack-grep wget curl
+
+# text UI file management
+apt-get -y install ncdu ranger tig
+
+# handy stuff
+apt-get -y install qalc dstat iftop cloc
 
 # clean up
 apt-get clean
