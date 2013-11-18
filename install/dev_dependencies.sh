@@ -20,3 +20,6 @@ apt-get -y install phantomjs
 
 # java for elasticsearch
 apt-get -y install openjdk-7-jre
+
+# clean up
+apt-get clean
