@@ -17,3 +17,6 @@ apt-get -y install libmysqlclient-dev
 
 # phantomjs for testing
 apt-get -y install phantomjs
+
+# java for elasticsearch
+apt-get -y install openjdk-7-jre
