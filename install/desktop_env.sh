@@ -1,5 +1,5 @@
 # command line stuff
-apt-get -y install zsh vim tmux wget tig ncdu
+apt-get -y install zsh vim tmux wget tig ncdu curl
 
 # xwindows
-apt-get -y install xserver-xorg xdm i3 chromium-browser
+apt-get -y install xserver-xorg lxdm i3 chromium-browser
