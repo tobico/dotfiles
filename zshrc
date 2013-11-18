@@ -1,6 +1,7 @@
 DOTFILES="$HOME/.dotfiles"
 
 source "$DOTFILES/aliases.zsh"
+source "$DOTFILES/functions.zsh"
 
 [ -s "$HOME/local.zsh" ] && source "$HOME/local.zsh"
 
