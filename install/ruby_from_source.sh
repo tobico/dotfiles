@@ -3,12 +3,14 @@ if [ "$(id -u)" != "0" ]; then
   exit 1
 fi
 
+RUBY_VERSION=2.0.0-p353
+
 # ruby dependencies
 apt-get -y install build-essential zlib1g-dev libssl-dev libreadline6-dev libyaml-dev
 
 cd /usr/local/src
 rm -rf ruby*
-wget http://cache.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p247.tar.gz
+wget http://cache.ruby-lang.org/pub/ruby/2.0/ruby-${RUBY_VERSION}.tar.gz
 tar zxvf ruby*.gz
 rm ruby*.gz
 
