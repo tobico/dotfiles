@@ -6,6 +6,9 @@ fi
 # essential tools
 apt-get -y install zsh vim tmux ack-grep wget curl
 
+# enables apt-add-repository
+apt-get -y install software-properties-common
+
 # text UI file management
 apt-get -y install ncdu ranger tig
 
