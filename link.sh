@@ -4,7 +4,7 @@ echo "Changing shell to zsh"
 chsh -s /usr/bin/zsh
 
 echo "Replacing dotfiles with symlinks"
-for file in zshrc gitconfig tmux.conf vimrc vim git.scmbrc fonts Xresources gtkrc-2.0 i3
+for file in zshrc gitconfig tmux.conf vimrc vim git.scmbrc fonts Xresources gtkrc-2.0 i3 gitignore
 do
   rm -rf $HOME/.$file
   ln -sv $HOME/.dotfiles/$file $HOME/.$file
@@ -19,6 +19,9 @@ if [ -d "$HOME/Library" ]; then
   mkdir -pv $HOME/Library/Keybindings
   ln -sv $HOME/.dotfiles/key_bindings $HOME/Library/Keybindings/DefaultKeyBinding.dict
 fi
+
+# Enable .gitignore
+git config --global core.excludesfile ~/.gitignore
 
 # Update Xresources so that new terminal settings apply right away
 if (( $+commands[xrdb] )); then

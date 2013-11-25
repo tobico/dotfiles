@@ -18,3 +18,5 @@
 	trustExitCode = false
 [merge]
 	tool = sublime
+[core]
+	excludesfile = /home/tobias/.gitignore
