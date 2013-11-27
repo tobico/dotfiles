@@ -8,6 +8,7 @@ alias superpush="git fetch && git rebase origin/master && git push"
 alias hbs="hub browse"
 alias gdmb="git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
 alias ack="ack-grep"
+alias ls="ls -h --color=auto"
 
 alias zs="zeus start"
 alias zr="zeus rspec"
