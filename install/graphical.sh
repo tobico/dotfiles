@@ -9,6 +9,9 @@ apt-get -y install xserver-xorg lxdm i3
 # getting errors installing chrome and loading xresources when we don't do this
 apt-get -y -f install
 
+# pdf viewer
+apt-get -y install evince
+
 # chrome
 if dpkg -s google-chrome-stable; then
   echo Chrome already installed, skipping
@@ -41,7 +44,7 @@ else
 fi
 
 # printing support
-apt-get -y install cups gnome-control-center
+apt-get -y install cups
 
 # clean up
 apt-get clean
