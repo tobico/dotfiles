@@ -46,5 +46,9 @@ fi
 # printing support
 apt-get -y install cups
 
+# audio support
+apt-get -y install alsa-base alsa-oss gnome-alsamixer
+apt-get -y autoremove pulseaudio
+
 # clean up
 apt-get clean
