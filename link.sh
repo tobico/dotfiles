@@ -1,7 +1,7 @@
 #!/usr/bin/zsh
 
 echo "Changing shell to zsh"
-chsh -s /usr/bin/zsh
+sudo chsh -s /usr/bin/zsh $USER
 
 echo "Replacing dotfiles with symlinks"
 for file in zshrc gitconfig tmux.conf vimrc vim git.scmbrc fonts Xresources gtkrc-2.0 i3 gitignore
