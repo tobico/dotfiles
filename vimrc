@@ -8,7 +8,7 @@ highlight LineNr ctermfg=Black ctermbg=Magenta
 
 " Right margins
 set cc=78,80,100,120
-hi ColorColumn ctermbg=lightgrey guibg=lightgrey
+hi ColorColumn ctermbg=lightgrey guibg=#222222
 
 " Soft tabs
 set expandtab
@@ -53,11 +53,11 @@ noremap l o
 :nmap <C-w>o :wincmd l<CR>
 
 " Color scheme for gvim
-set guifont=Source_Code_Pro:11
+set guifont=Source\ Code\ Pro\ Medium\ 11
 set background=dark
 hi SpecialKey guifg=#4B7FD3
 hi MoreMsg guifg=#5BF385
-hi Visual guifg=NONE guibg=NONE
+"hi Visual guifg=NONE guibg=NONE
 hi Folded ctermbg=4 guibg=#4B7FD3
 hi FoldColumn ctermbg=7
 hi DiffAdd guibg=#4B7FD3
