@@ -22,7 +22,7 @@ else
 fi
 
 # thunderbird
-apt-get -y install thunderbird
+# apt-get -y install thunderbird
 
 # hipchat
 if dpkg -s hipchat; then
@@ -31,7 +31,7 @@ else
   echo "deb http://downloads.hipchat.com/linux/apt stable main" > /etc/apt/sources.list.d/atlassian-hipchat.list
   wget -O - https://www.hipchat.com/keys/hipchat-linux.key | apt-key add -
   apt-get update
-  apt-get -y install hipchat
+  apt-get -y install libpulse0 hipchat
 fi
 
 # skype
