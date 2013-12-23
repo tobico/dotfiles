@@ -10,7 +10,7 @@ apt-get -y install zsh vim-gtk tmux ack-grep wget curl
 apt-get -y install software-properties-common
 
 # text UI file management
-apt-get -y install ncdu ranger tig
+apt-get -y install tree ncdu ranger tig
 
 # handy stuff
 apt-get -y install qalc dstat iftop cloc
