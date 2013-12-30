@@ -11,6 +11,11 @@
 
 set $mod Mod1
 
+# Color scheme
+client.focused #FF66FF #FF66FF #000000 #000000
+client.focused_inactive #991199 #991199 #000000 #000000
+client.unfocused #331133 #000000 #FFAAFF  #000000
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -146,5 +151,12 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+  #mode hide
+  status_command i3status
+
+  colors {
+    focused_workspace #FF66FF #FF66FF #000000
+    active_workspace #991199 #991199 #000000
+    inactive_workspace #331133 #000000 #FFAAFF
+  }
 }
