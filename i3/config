@@ -13,8 +13,8 @@ set $mod Mod1
 
 # Color scheme
 client.focused #660066 #660066 #FFAAFF #000000
-client.focused_inactive #991199 #991199 #000000 #000000
-client.unfocused #331133 #000000 #FFAAFF  #000000
+client.focused_inactive #500050 #500050 #FFAAFF #000000
+client.unfocused #330033 #330033 #FFAAFF  #000000
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -156,7 +156,7 @@ bar {
 
   colors {
     focused_workspace #660066 #660066 #FFAAFF
-    active_workspace #991199 #991199 #000000
-    inactive_workspace #331133 #000000 #FFAAFF
+    active_workspace #500050 #500050 #FFAAFF
+    inactive_workspace #330033 #330033 #FFAAFF
   }
 }
