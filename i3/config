@@ -12,7 +12,7 @@
 set $mod Mod1
 
 # Color scheme
-client.focused #FF66FF #FF66FF #000000 #000000
+client.focused #660066 #660066 #FFAAFF #000000
 client.focused_inactive #991199 #991199 #000000 #000000
 client.unfocused #331133 #000000 #FFAAFF  #000000
 
@@ -155,7 +155,7 @@ bar {
   status_command i3status
 
   colors {
-    focused_workspace #FF66FF #FF66FF #000000
+    focused_workspace #660066 #660066 #FFAAFF
     active_workspace #991199 #991199 #000000
     inactive_workspace #331133 #000000 #FFAAFF
   }
