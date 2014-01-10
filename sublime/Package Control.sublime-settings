@@ -1,0 +1,12 @@
+{
+	"installed_packages":
+	[
+		"Abacus",
+		"Git",
+		"RSpec",
+		"Ruby Slim",
+		"SublimeLinter",
+		"SublimeLinter-ruby",
+		"Theme - Soda"
+	]
+}

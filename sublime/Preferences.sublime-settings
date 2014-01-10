@@ -1,0 +1,24 @@
+{
+	"always_show_minimap_viewport": true,
+	"color_scheme": "Packages/User/Baby, The Code Shines Bright (SL).tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Source Code Pro",
+	"font_size": 11,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+	],
+	"remember_open_files": false,
+	"rulers":
+	[
+		78,
+		80,
+		100
+	],
+	"spell_check": true,
+	"tab_size": 2,
+	"theme": "Soda Dark 3.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"vintage_start_in_command_mode": true
+}
