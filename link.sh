@@ -12,6 +12,10 @@ done
 rm -rf $HOME/.config/sublime-text-3/Packages/User
 ln -sv $HOME/.dotfiles/sublime $HOME/.config/sublime-text-3/Packages/User
 
+mkdir -p $HOME/.gconf/apps
+rm -rf $HOME/.gconf/apps/gnome-terminal
+ln -sv $HOME/.dotfiles/gnome-terminal $HOME/.gconf/apps/gnome-terminal
+
 if [ -d "$HOME/Library" ]; then
   echo "Enabling Ctrl+W on OSX"
   rm -f $HOME/Library/Services
