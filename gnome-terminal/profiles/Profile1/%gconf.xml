@@ -4,30 +4,30 @@
 		<stringvalue>solid</stringvalue>
 	</entry>
 	<entry name="default_size_columns" mtime="1389834411" type="int" value="80"/>
-	<entry name="use_theme_colors" mtime="1389834655" type="bool" value="false"/>
-	<entry name="visible_name" mtime="1389834655" type="string">
+	<entry name="use_theme_colors" mtime="1389835635" type="bool" value="false"/>
+	<entry name="visible_name" mtime="1389835635" type="string">
 		<stringvalue>Tobias</stringvalue>
 	</entry>
 	<entry name="custom_command" mtime="1389834411" type="string">
 		<stringvalue></stringvalue>
 	</entry>
-	<entry name="palette" mtime="1389834655" type="string">
-		<stringvalue>#000000000000:#949457579D9D:#5B5BF3F38584:#FFFFF3F39D9D:#4B4B7F7FD3D3:#D9D99D9DD0D0:#6161C8C8C3C3:#D3D3D7D7CFCF:#333333333333:#878739399696:#3332FFFF5756:#FFFFECEC2F2F:#11114645EDED:#F0F04242A7A7:#0D0DC3C3A7A7:#FFFFFFFFFFFF</stringvalue>
+	<entry name="palette" mtime="1389835635" type="string">
+		<stringvalue>#000000000000:#949457579D9D:#5B5BF3F38584:#FFFFF3F39D9D:#4B4B7F7FD3D3:#D9D99D9DD0D0:#6161C8C8C3C3:#BABABDBDB6B6:#333333333333:#878739399696:#3332FFFF5756:#FFFFECEC2F2F:#11114645EDED:#F0F04242A7A7:#0D0DC3C3A7A7:#FFFFFFFFFFFF</stringvalue>
 	</entry>
-	<entry name="default_show_menubar" mtime="1389834655" type="bool" value="false"/>
+	<entry name="default_show_menubar" mtime="1389835635" type="bool" value="false"/>
 	<entry name="scrollback_lines" mtime="1389834411" type="int" value="512"/>
 	<entry name="title" mtime="1389834411" type="string">
 		<stringvalue>Terminal</stringvalue>
 	</entry>
 	<entry name="use_custom_default_size" mtime="1389834411" type="bool" value="false"/>
-	<entry name="font" mtime="1389834655" type="string">
+	<entry name="font" mtime="1389835635" type="string">
 		<stringvalue>Source Code Pro Medium 11</stringvalue>
 	</entry>
-	<entry name="backspace_binding" mtime="1389834655" type="string">
+	<entry name="backspace_binding" mtime="1389835635" type="string">
 		<stringvalue>auto</stringvalue>
 	</entry>
 	<entry name="silent_bell" mtime="1389834411" type="bool" value="false"/>
-	<entry name="background_color" mtime="1389834655" type="string">
+	<entry name="background_color" mtime="1389835635" type="string">
 		<stringvalue>#000000000000</stringvalue>
 	</entry>
 	<entry name="exit_action" mtime="1389834411" type="string">
@@ -36,12 +36,12 @@
 	<entry name="scroll_on_keystroke" mtime="1389834411" type="bool" value="true"/>
 	<entry name="scroll_background" mtime="1389834411" type="bool" value="true"/>
 	<entry name="use_custom_command" mtime="1389834411" type="bool" value="false"/>
-	<entry name="use_system_font" mtime="1389834655" type="bool" value="false"/>
-	<entry name="scrollbar_position" mtime="1389834655" type="string">
+	<entry name="use_system_font" mtime="1389835635" type="bool" value="false"/>
+	<entry name="scrollbar_position" mtime="1389835635" type="string">
 		<stringvalue>hidden</stringvalue>
 	</entry>
 	<entry name="allow_bold" mtime="1389834411" type="bool" value="true"/>
-	<entry name="delete_binding" mtime="1389834655" type="string">
+	<entry name="delete_binding" mtime="1389835635" type="string">
 		<stringvalue>auto</stringvalue>
 	</entry>
 	<entry name="title_mode" mtime="1389834411" type="string">
@@ -52,7 +52,7 @@
 	</entry>
 	<entry name="alternate_screen_scroll" mtime="1389834411" type="bool" value="false"/>
 	<entry name="scroll_on_output" mtime="1389834411" type="bool" value="false"/>
-	<entry name="foreground_color" mtime="1389834655" type="string">
+	<entry name="foreground_color" mtime="1389835635" type="string">
 		<stringvalue>#F1F1F1F1F1F1</stringvalue>
 	</entry>
 	<entry name="cursor_shape" mtime="1389834411" type="string">
@@ -62,7 +62,7 @@
 		<stringvalue></stringvalue>
 	</entry>
 	<entry name="default_size_rows" mtime="1389834411" type="int" value="24"/>
-	<entry name="scrollback_unlimited" mtime="1389834655" type="bool" value="true"/>
+	<entry name="scrollback_unlimited" mtime="1389835635" type="bool" value="true"/>
 	<entry name="background_darkness" mtime="1389834411" type="float" value="0.5"/>
 	<entry name="cursor_blink_mode" mtime="1389834411" type="string">
 		<stringvalue>system</stringvalue>
