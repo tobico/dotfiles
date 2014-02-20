@@ -4,7 +4,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 # essential tools
-apt-get -y install zsh vim-gtk tmux ack-grep wget curl
+apt-get -y install zsh vim-gnome tmux ack-grep wget curl
 
 # enables apt-add-repository
 apt-get -y install software-properties-common
