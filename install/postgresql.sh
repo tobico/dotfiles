@@ -7,4 +7,4 @@ apt-add-repository -y "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 apt-get update
 
-apt-get install -y postgresql-9.3
+apt-get install -y postgresql-9.3 libpq-dev
