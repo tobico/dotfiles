@@ -15,9 +15,9 @@ exec --no-startup-id xsetroot -solid #200020
 set $mod Mod1
 
 # Color scheme
-client.focused #700070 #700070 #FFAAFF #000000
-client.focused_inactive #500050 #500050 #FFAAFF #000000
-client.unfocused #330033 #330033 #FFAAFF  #000000
+client.focused #700070 #700070 #FFAAFF
+client.focused_inactive #500050 #500050 #FFAAFF
+client.unfocused #330033 #330033 #FFAAFF
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -158,8 +158,8 @@ bar {
   status_command i3status
 
   colors {
-    focused_workspace #700070 #700070 #FFAAFF
-    active_workspace #500050 #500050 #FFAAFF
-    inactive_workspace #330033 #330033 #FFAAFF
+    focused_workspace #700070 #700070
+    active_workspace #500050 #500050
+    inactive_workspace #330033 #330033
   }
 }
