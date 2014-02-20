@@ -3,11 +3,13 @@ if [ "$(id -u)" != "0" ]; then
   exit 1
 fi
 
+ELASTICSEARCH_URL=https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.0.0.deb
+
 # java for elasticsearch
 apt-get -y install openjdk-7-jre
 
 # elasticsearch from deb
-wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.7.deb -O /tmp/elasticsearch.deb
+wget $ELASTICSEARCH_URL -O /tmp/elasticsearch.deb
 dpkg -i /tmp/elasticsearch.deb
 rm /tmp/elasticsearch.deb
 
