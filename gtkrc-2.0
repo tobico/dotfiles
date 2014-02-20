@@ -1,1 +1,6 @@
-gtk-key-theme-name = "Emacs"
+# -- THEME AUTO-WRITTEN DO NOT EDIT
+include "/home/tobias/.themes/FlatStudioDark/gtk-2.0/gtkrc"
+
+include "/home/tobias/.gtkrc.mine"
+
+# -- THEME AUTO-WRITTEN DO NOT EDIT

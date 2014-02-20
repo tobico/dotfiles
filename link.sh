@@ -4,7 +4,7 @@ echo "Changing shell to zsh"
 sudo chsh -s /usr/bin/zsh $USER
 
 echo "Replacing dotfiles with symlinks"
-for file in zshrc gitconfig tmux.conf vimrc vim git.scmbrc fonts Xresources gtkrc-2.0 i3 gitignore
+for file in zshrc gitconfig tmux.conf vimrc vim git.scmbrc fonts Xresources gtkrc-2.0 i3 gitignore themes
 do
   rm -rf $HOME/.$file
   ln -sv $HOME/.dotfiles/$file $HOME/.$file
