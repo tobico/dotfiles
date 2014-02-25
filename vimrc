@@ -24,6 +24,9 @@ augroup END
 " Disable "Ex-mode"
 nnoremap Q <Nop>
 
+" Always show status line
+set laststatus=2
+
 " Restyle vertical split window
 set fillchars+=vert:\ 
 
@@ -75,6 +78,9 @@ hi PreProc guifg=#4B7FD3
 hi Type guifg=#5BF385
 hi Underlined guifg=#4B7FD3
 hi Todo guifg=Black
+hi VertSplit guifg=#660066 guibg=#660066
+hi StatusLine guibg=#eeeeee guifg=#880088
+hi StatusLineNC guibg=#eeccee guifg=#550055
 
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
