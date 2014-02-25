@@ -1,5 +1,5 @@
 # -- THEME AUTO-WRITTEN DO NOT EDIT
-include "/home/tobias/.themes/FlatStudioDark/gtk-2.0/gtkrc"
+include "/usr/share/themes/Ambiance/gtk-2.0/gtkrc"
 
 include "/home/tobias/.gtkrc.mine"
 
