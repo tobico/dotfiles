@@ -8,7 +8,7 @@ highlight LineNr ctermfg=Black ctermbg=Magenta
 
 " Right margins
 set cc=78,80,100,120
-hi ColorColumn ctermbg=lightgrey guibg=#222222
+hi ColorColumn ctermbg=8 guibg=#222222
 
 " Soft tabs
 set expandtab
@@ -63,8 +63,8 @@ hi FoldColumn ctermbg=7
 hi DiffAdd guibg=#4B7FD3
 hi DiffChange guibg=#D99DD0
 hi DiffDelete guibg=#61C8C3
-hi Normal guifg=Gray guibg=Black
-hi Cursor guibg=#191919
+hi Normal guifg=#FFFFFF guibg=#000000
+hi Cursor guibg=#FFFFFF
 hi lCursor guibg=#191919
 hi Comment guifg=#61C8C3
 hi Constant guifg=#D99DD0
@@ -75,3 +75,19 @@ hi PreProc guifg=#4B7FD3
 hi Type guifg=#5BF385
 hi Underlined guifg=#4B7FD3
 hi Todo guifg=Black
+
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
+
+" If the current buffer has never been saved, it will have no name,
+" call the file browser to save it, otherwise just save it.
+command -nargs=0 -bar Update if &modified 
+                           \|    if empty(bufname('%'))
+                           \|        browse confirm write
+                           \|    else
+                           \|        confirm write
+                           \|    endif
+                           \|endif
+nnoremap <silent> <C-S> :<C-u>Update<CR>
