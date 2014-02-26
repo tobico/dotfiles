@@ -81,6 +81,7 @@ hi Todo guifg=Black
 hi VertSplit guifg=#660066 guibg=#660066
 hi StatusLine guibg=#eeeeee guifg=#880088
 hi StatusLineNC guibg=#eeccee guifg=#550055
+hi LineNr guifg=#444444
 
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
