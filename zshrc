@@ -14,7 +14,7 @@ else
 fi
 source "$DOTFILES/pure.zsh"
 
-path=(./bin /usr/local/bin /usr/bin /bin /usr/sbin /sbin /opt/X11/bin $HOME/.rbenv/bin /usr/local/share/npm/bin $HOME/.dotfiles/bin)
+path=(/usr/local/bin /usr/bin /bin /usr/sbin /sbin /opt/X11/bin $HOME/.rbenv/bin /usr/local/share/npm/bin $HOME/.dotfiles/bin)
 export NODE_PATH="/usr/local/lib/node"
 export CDPATH="$HOME/src:$CDPATH"
 
@@ -31,3 +31,5 @@ if [ -d "$HOME/.rbenv" ]; then
   export RBENV_ROOT=$HOME/.rbenv
   eval "$(rbenv init -)"
 fi
+
+path=(./bin $path)
