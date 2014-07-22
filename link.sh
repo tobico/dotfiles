@@ -1,7 +1,7 @@
-#!/usr/bin/zsh
+#!/usr/bin/env zsh
 
 echo "Changing shell to zsh"
-sudo chsh -s /usr/bin/zsh $USER
+sudo chsh -s `which zsh` $USER
 
 echo "Replacing dotfiles with symlinks"
 for file in zshrc gitconfig tmux.conf vimrc vim git.scmbrc fonts Xresources gtkrc-2.0 i3 gitignore themes
@@ -9,8 +9,11 @@ do
   rm -rf $HOME/.$file
   ln -sv $HOME/.dotfiles/$file $HOME/.$file
 done
-rm -rf $HOME/.config/sublime-text-3/Packages/User
-ln -sv $HOME/.dotfiles/sublime $HOME/.config/sublime-text-3/Packages/User
+#rm -rf $HOME/.config/sublime-text-3/Packages/User
+#ln -sv $HOME/.dotfiles/sublime $HOME/.config/sublime-text-3/Packages/User
+mkdir -pv $HOME/.config/ranger
+rm -f $HOME/.config/ranger/rc.conf
+ln -sv $HOME/.dotfiles/config/ranger/rc.conf $HOME/.config/ranger/rc.conf
 
 # Install gnome-terminal configuraton
 gconftool-2 --shutdown
