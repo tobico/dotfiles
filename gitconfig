@@ -19,4 +19,4 @@
 [merge]
 	tool = sublime
 [core]
-	excludesfile = /home/tobias/.gitignore
+	excludesfile = ~/.gitignore

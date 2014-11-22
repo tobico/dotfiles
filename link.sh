@@ -16,14 +16,12 @@ rm -f $HOME/.config/ranger/rc.conf
 ln -sv $DOTFILES/config/ranger/rc.conf $HOME/.config/ranger/rc.conf
 
 if [ -d "$HOME/Library" ]; then
-  echo "Enabling Ctrl+W on OSX"
+  echo "Linking services directory"
   rm -f $HOME/Library/Services
-  ln -s $DOTFILES/services $HOME/Library/Services
+  ln -s $DOTFILES/mac/services $HOME/Library/Services
 
+  echo "Enabling Ctrl+W on OSX"
   rm -fv $HOME/Library/Keybindings/DefaultKeyBinding.dict
   mkdir -pv $HOME/Library/Keybindings
   ln -sv $DOTFILES/mac/key_bindings $HOME/Library/Keybindings/DefaultKeyBinding.dict
 fi
-
-# Enable .gitignore
-git config --global core.excludesfile ~/.gitignore
