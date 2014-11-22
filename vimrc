@@ -8,7 +8,6 @@ highlight LineNr ctermfg=Black ctermbg=Magenta
 
 " Right margins
 set cc=78,80,100,120
-hi ColorColumn ctermbg=8 guibg=#222222
 
 " Soft tabs
 set expandtab
@@ -55,33 +54,7 @@ noremap l o
 :nmap <C-w>i :wincmd k<CR>
 :nmap <C-w>o :wincmd l<CR>
 
-" Color scheme for gvim
 set guifont=Source\ Code\ Pro\ Medium\ 11
-set background=dark
-hi SpecialKey guifg=#4B7FD3
-hi MoreMsg guifg=#5BF385
-"hi Visual guifg=NONE guibg=NONE
-hi Folded ctermbg=4 guibg=#4B7FD3
-hi FoldColumn ctermbg=7
-hi DiffAdd guibg=#4B7FD3
-hi DiffChange guibg=#D99DD0
-hi DiffDelete guibg=#61C8C3
-hi Normal guifg=#FFFFFF guibg=#000000
-hi Cursor guibg=#FFFFFF
-hi lCursor guibg=#191919
-hi Comment guifg=#61C8C3
-hi Constant guifg=#D99DD0
-hi Special guifg=#94579D
-hi Identifier guifg=#61C8C3
-hi Statement guifg=#FFF39D
-hi PreProc guifg=#4B7FD3
-hi Type guifg=#5BF385
-hi Underlined guifg=#4B7FD3
-hi Todo guifg=Black
-hi VertSplit guifg=#660066 guibg=#660066
-hi StatusLine guibg=#eeeeee guifg=#880088
-hi StatusLineNC guibg=#eeccee guifg=#550055
-hi LineNr guifg=#444444
 
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
@@ -98,3 +71,6 @@ command -nargs=0 -bar Update if &modified
                            \|    endif
                            \|endif
 nnoremap <silent> <C-S> :<C-u>Update<CR>
+
+colorscheme custom
+let macvim_skip_colorscheme = 1
