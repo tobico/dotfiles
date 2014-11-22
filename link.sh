@@ -15,13 +15,6 @@ mkdir -pv $HOME/.config/ranger
 rm -f $HOME/.config/ranger/rc.conf
 ln -sv $HOME/.dotfiles/config/ranger/rc.conf $HOME/.config/ranger/rc.conf
 
-# Install gnome-terminal configuraton
-gconftool-2 --shutdown
-mkdir -p $HOME/.gconf/apps
-rm -rf $HOME/.gconf/apps/gnome-terminal
-ln -sv $HOME/.dotfiles/gnome-terminal $HOME/.gconf/apps/gnome-terminal
-gconftool-2 --spawn
-
 if [ -d "$HOME/Library" ]; then
   echo "Enabling Ctrl+W on OSX"
   rm -f $HOME/Library/Services
@@ -34,8 +27,3 @@ fi
 
 # Enable .gitignore
 git config --global core.excludesfile ~/.gitignore
-
-# Update Xresources so that new terminal settings apply right away
-if (( $+commands[xrdb] )); then
-  xrdb $HOME/.Xresources
-fi
