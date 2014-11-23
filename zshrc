@@ -1,18 +1,18 @@
 DOTFILES="$HOME/.dotfiles"
 
-source "$DOTFILES/aliases.zsh"
-source "$DOTFILES/functions.zsh"
+# Prepare autocompletions
+zstyle :compinstall filename "$HOME/.zshrc"
+autoload -Uz compinit
+compinit
 
-[ -s "$HOME/local.zsh" ] && source "$HOME/local.zsh"
+. "$DOTFILES/aliases.zsh"
+. "$DOTFILES/functions.zsh"
+
+[ -s "$HOME/local.zsh" ] && . "$HOME/local.zsh"
 
 export EDITOR=vim
 
-if [ -e "$DOTFILES/scm_breeze/scm_breeze.sh" ]; then
-  source "$DOTFILES/scm_breeze/scm_breeze.sh"
-else
-  echo "Note: .dotfiles submodules may not be not checked out"
-fi
-source "$DOTFILES/pure.zsh"
+. "$DOTFILES/pure.zsh"
 
 path=(/usr/local/bin /usr/bin /bin /usr/sbin /sbin /opt/X11/bin $HOME/.rbenv/bin /usr/local/share/npm/bin $HOME/.dotfiles/bin)
 export NODE_PATH="/usr/local/lib/node"
@@ -22,7 +22,13 @@ set -o emacs
 fpath=($DOTFILES/zsh-completions/src $fpath)
 
 if [ -e "$DOTFILES/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
-  source $DOTFILES/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  . $DOTFILES/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
+
+if [ -e "$DOTFILES/scm_breeze/scm_breeze.sh" ]; then
+  . "$DOTFILES/scm_breeze/scm_breeze.sh"
+else
+  echo "Note: .dotfiles submodules may not be not checked out"
 fi
 
 # RBENV
