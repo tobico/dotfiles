@@ -27,6 +27,9 @@ export EDITOR=vim
 path=(/usr/local/bin /usr/bin /bin /usr/sbin /sbin /opt/X11/bin $HOME/.rbenv/bin /usr/local/share/npm/bin $HOME/.dotfiles/bin)
 export NODE_PATH="/usr/local/lib/node"
 
+# Removes default binding of ^Y to suspend on OS X
+stty dsusp undef
+
 set -o emacs
 
 fpath=($DOTFILES/zsh-completions/src $fpath)
