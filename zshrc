@@ -8,8 +8,6 @@ compinit
 . "$DOTFILES/aliases.zsh"
 . "$DOTFILES/functions.zsh"
 
-[ -s "$HOME/local.zsh" ] && . "$HOME/local.zsh"
-
 export EDITOR=vim
 
 . "$DOTFILES/pure.zsh"
@@ -38,3 +36,5 @@ if [ -d "$HOME/.rbenv" ]; then
 fi
 
 path=(./bin $path)
+
+[ -s "$HOME/local.zsh" ] && . "$HOME/local.zsh"
