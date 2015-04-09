@@ -28,3 +28,9 @@
 [submodule "vim/bundle/colorv"]
 	path = vim/bundle/colorv
 	url = https://github.com/Rykka/colorv.vim.git
+[submodule "vim/bundle/vim-go"]
+	path = vim/bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule "vim/bundle/vim-markdown"]
+	path = vim/bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
