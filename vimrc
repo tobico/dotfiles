@@ -27,32 +27,10 @@ nnoremap Q <Nop>
 set laststatus=2
 
 " Restyle vertical split window
-set fillchars+=vert:\ 
+set fillchars+=vert:\
 
 " Use a more convenient leader
 let mapleader = ","
-
-" Remappings for colemak
-noremap h n
-noremap n h
-noremap H N
-noremap N H
-noremap e j
-noremap j e
-noremap I K
-noremap K I
-noremap i k
-noremap k i
-noremap O L
-noremap L O
-noremap o l
-noremap l o
-
-" Pane switching remaps
-:nmap <C-w>n :wincmd h<CR>
-:nmap <C-w>e :wincmd j<CR>
-:nmap <C-w>i :wincmd k<CR>
-:nmap <C-w>o :wincmd l<CR>
 
 set guifont=Source\ Code\ Pro\ Medium\ 11
 
@@ -63,7 +41,7 @@ set guioptions-=L  "remove left-hand scroll bar
 
 " If the current buffer has never been saved, it will have no name,
 " call the file browser to save it, otherwise just save it.
-command -nargs=0 -bar Update if &modified 
+command -nargs=0 -bar Update if &modified
                            \|    if empty(bufname('%'))
                            \|        browse confirm write
                            \|    else

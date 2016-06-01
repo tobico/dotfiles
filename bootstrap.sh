@@ -1,19 +1,19 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
+
+set -e
+
+git submodule update --init
 
 DOTFILES="$HOME/.dotfiles"
 
-echo "Changing shell to zsh"
-sudo chsh -s `which zsh` $USER
-
 echo "Replacing dotfiles with symlinks"
-for file in zshrc gitconfig tmux.conf vimrc vim git.scmbrc fonts Xresources gtkrc-2.0 i3 gitignore themes
+for file in profile bashrc zshrc tmux.conf vimrc vim git.scmbrc fonts gitignore
 do
   rm -rf $HOME/.$file
   ln -sv $DOTFILES/$file $HOME/.$file
 done
-mkdir -pv $HOME/.config/ranger
-rm -f $HOME/.config/ranger/rc.conf
-ln -sv $DOTFILES/config/ranger/rc.conf $HOME/.config/ranger/rc.conf
+
+cp -f $DOTFILES/gitconfig $HOME/.gitconfig
 
 if [ -d "$HOME/Library" ]; then
   echo "Linking services directory"
