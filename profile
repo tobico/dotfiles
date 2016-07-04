@@ -15,4 +15,9 @@ if [ -d "$HOME/.rbenv" ]; then
   eval "$(rbenv init -)"
 fi
 
-[ -s "$HOME/local.sh" ] && . "$HOME/local.sh"
+if [ -e "$HOME/local.sh" ]; then
+  . "$HOME/local.sh"
+else
+  echo "WARNING: No local.sh file found"
+fi
+
