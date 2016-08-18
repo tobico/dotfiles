@@ -1,0 +1,5 @@
+alias be="bundle exec"
+alias r="bundle exec rails"
+alias g="git"
+alias ls="ls -Ghp"
+alias -g yo="$@ && echo dawg"

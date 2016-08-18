@@ -2,16 +2,29 @@
 
 set -e
 
-git submodule update --init
+# git submodule update --init
 
 DOTFILES="$HOME/.dotfiles"
 
 echo "Replacing dotfiles with symlinks"
-for file in profile bashrc zshrc tmux.conf vimrc vim git.scmbrc fonts gitignore
+for file in tmux.conf vimrc vim fonts gitignore
 do
   rm -rf $HOME/.$file
   ln -sv $DOTFILES/$file $HOME/.$file
 done
+
+if [ -f "$HOME/.profile" ]; then
+  rm $HOME/.profile
+fi
+
+if [ ! -f "$HOME/.bashrc" ]; then
+  echo ". $DOTFILES/common.sh" > $HOME/.bashrc
+fi
+
+if [ ! -f "$HOME/.zshrc" ]; then
+  echo ". $DOTFILES/common.sh" > $HOME/.zshrc
+  echo ". $DOTFILES/zsh.zsh" >> $HOME/.zshrc
+fi
 
 cp -f $DOTFILES/gitconfig $HOME/.gitconfig
 

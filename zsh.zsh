@@ -1,7 +1,6 @@
-. "$HOME/.profile"
-. "$DOTFILES/aliases.zsh"
-. "$DOTFILES/functions.zsh"
-. "$DOTFILES/pure.zsh"
+. "$DOTFILES/zsh/aliases.zsh"
+. "$DOTFILES/zsh/functions.zsh"
+. "$DOTFILES/zsh/pure.zsh"
 
 # Prepare autocompletions
 zstyle :compinstall filename "$HOME/.zshrc"
