@@ -11,11 +11,16 @@
 [alias]
   s = status
   f = fetch
+  a = add
   co = checkout
   ec = config --global -e
+  cm = commit -m
+  ps = push
+  psf = push -f
+  pl = pull
   up = !git pull --rebase --prune $@ && git submodule update --init --recursive
   cob = checkout -b
-  cm = !git add -A && git commit -m
+  acm = !git add -A && git commit -m
   save = !git add -A && git commit -m 'SAVEPOINT'
   wip = !git add -u && git commit -m "WIP"
   undo = reset HEAD~1 --mixed
