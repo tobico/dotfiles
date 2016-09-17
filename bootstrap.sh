@@ -4,7 +4,7 @@ set -e
 
 # git submodule update --init
 
-DOTFILES="$HOME/.dotfiles"
+DOTFILES="$HOME/dotfiles"
 
 echo "Replacing dotfiles with symlinks"
 for file in tmux.conf vimrc vim fonts gitignore
