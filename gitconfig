@@ -12,6 +12,7 @@
   s = status
   f = fetch
   a = add
+  b = branch
   co = checkout
   ec = config --global -e
   cm = commit -m
