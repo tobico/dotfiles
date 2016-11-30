@@ -6,4 +6,6 @@ else
   alias g="git"
 fi
 alias ls="ls -Ghp"
+alias cdg="cd \`git rev-parse --show-toplevel\`"
 alias -g yo="$@ && echo dawg"
+
