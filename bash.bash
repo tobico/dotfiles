@@ -1,0 +1,1 @@
+. "$DOTFILES/bash/prompt.bash"
