@@ -57,10 +57,11 @@ precmd() {
 	[[ -n "$username" ]] && display_username="%{$bg[red]%} $username"
 	vcs=""
 	[[ -n "$vcs_info_msg_0_" ]] && vcs="%{$bg[blue]%}$vcs_info_msg_0_`git_dirty` "
+	[[ "$vcs_info_msg_0_" == *master* ]] && vcs="%S%{$bg[yellow]%} ⚠️ $vcs_info_msg_0_ ⚠️  %s"
 	exec_time=`cmd_exec_time`
 	[[ -n "$exec_time" ]] && exec_time="%{$bg[yellow]%} $exec_time "
 
-	print -P "\n%{$fg[black]%}%{$bg[green]%} %~ $vcs$display_username$exec_time%{$reset_color%}"
+	print -P "\n%{$fg[black]%}%{$bg[green]%} %~ $display_username$exec_time$vcs%{$reset_color%}"
 
 	# Reset value since `preexec` isn't always triggered
 	unset cmd_timestamp
