@@ -1,0 +1,8 @@
+{
+	"workbench.editor.showTabs": false,
+	"editor.fontFamily": "Iosevka",
+	"editor.fontLigatures": true,
+	"editor.insertSpaces": false,
+	"typescript.check.tscVersion": false,
+	"keyboard.dispatch": "keyCode"
+}

@@ -28,6 +28,8 @@ fi
 
 cp -f $DOTFILES/gitconfig $HOME/.gitconfig
 
+# MacOS setup
+
 if [ -d "$HOME/Library" ]; then
   echo "Linking services directory"
   rm -f $HOME/Library/Services
@@ -37,4 +39,13 @@ if [ -d "$HOME/Library" ]; then
   rm -fv $HOME/Library/Keybindings/DefaultKeyBinding.dict
   mkdir -pv $HOME/Library/Keybindings
   ln -sv $DOTFILES/mac/key_bindings $HOME/Library/Keybindings/DefaultKeyBinding.dict
+fi
+
+# Linux setup
+
+if [ -d "$HOME/.config" ]; then
+  echo "Linking config"
+  mkdir -pv $HOME/.config/Code/User
+  rm -f $HOME/.config/Code/User/settings.json
+  ln -sv $DOTFILES/vscode-settings.json $HOME/.config/Code/User/settings.json
 fi
