@@ -7,7 +7,7 @@ set -e
 DOTFILES="$HOME/dotfiles"
 
 echo "Replacing dotfiles with symlinks"
-for file in tmux.conf vimrc vim fonts gitignore
+for file in tmux.conf vimrc vim fonts gitignore pam_environment
 do
   rm -rf $HOME/.$file
   ln -sv $DOTFILES/$file $HOME/.$file
