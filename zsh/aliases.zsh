@@ -1,4 +1,5 @@
 alias be="bundle exec"
+alias dc="docker-compose"
 alias r="bundle exec rails"
 if type hub > /dev/null; then
   alias g="hub"
