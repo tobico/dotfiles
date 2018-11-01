@@ -37,7 +37,7 @@ gacmt() { git add -A && gcmt $@ }
 
 gwip() { git add -u && git commit -m "WIP" }
 gundo() { git reset HEAD~1 --mixed }
-gamend() { git commit -a --amend }
+gamend() { git add -A && git commit --amend }
 gbclean() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d }
 
 ghc() { hub compare }

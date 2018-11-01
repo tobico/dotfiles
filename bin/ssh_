@@ -1,0 +1,2 @@
+#!/bin/zsh
+run_colored 20000 0 0 SSH ssh $@

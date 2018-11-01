@@ -1,0 +1,24 @@
+#!/bin/zsh
+# change color of OS X Terminal background while running a command
+# based on ssh_host script by JD Smith at http://hints.macworld.com/article.php?story=20050723153226344
+
+default_opacity=65535
+default_color="0, 0, 0, $default_opacity"
+active_color="$1, $2, $3, $default_opacity"
+window_name="$4:$$"
+
+trap cleanup 1 2 3 6
+
+function cleanup() {
+    set_color "$default_color"
+    echo -n "\e]0;\a"
+}
+
+function set_color() {
+    echo -n "\e]0;${window_name}\a"
+    osascript -e 'tell application "Terminal" to tell (first window whose name contains "'$window_name'") to set background color to {'"$1"'}'
+}
+
+set_color "$active_color"
+${@[5,-1]}
+cleanup

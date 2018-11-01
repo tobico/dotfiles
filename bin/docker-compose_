@@ -1,0 +1,2 @@
+#!/bin/zsh
+run_colored 0 0 20000 Docker docker-compose $@
