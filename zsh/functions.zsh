@@ -25,15 +25,15 @@ gcml() { git commit -m "localize: $*" }
 gcmr() { git commit -m "refactor: $*" }
 gcms() { git commit -m "style: $*" }
 gcmt() { git commit -m "test: $*" }
-gacm() { git add -A && gcm $@ }
-gacmc() { git add -A && gcmc $@ }
-gacmd() { git add -A && gcmd $@ }
-gacmf() { git add -A && gcmf $@ }
-gacmx() { git add -A && gcmx $@ }
-gacml() { git add -A && gcml $@ }
-gacmr() { git add -A && gcmr $@ }
-gacms() { git add -A && gcms $@ }
-gacmt() { git add -A && gcmt $@ }
+# gacm() { git add -A && gcm $@ }
+# gacmc() { git add -A && gcmc $@ }
+# gacmd() { git add -A && gcmd $@ }
+# gacmf() { git add -A && gcmf $@ }
+# gacmx() { git add -A && gcmx $@ }
+# gacml() { git add -A && gcml $@ }
+# gacmr() { git add -A && gcmr $@ }
+# gacms() { git add -A && gcms $@ }
+# gacmt() { git add -A && gcmt $@ }
 
 gwip() { git add -u && git commit -m "WIP" }
 gundo() { git reset HEAD~1 --mixed }
