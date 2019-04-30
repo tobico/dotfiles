@@ -8,5 +8,5 @@ else
 fi
 alias ls="ls -Ghp"
 alias cdg="cd \`git rev-parse --show-toplevel\`"
-alias ssh=ssh_
-alias docker-compose=docker-compose_
+#alias ssh=ssh_
+#alias docker-compose=docker-compose_
